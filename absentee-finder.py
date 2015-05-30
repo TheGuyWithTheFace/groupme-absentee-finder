@@ -10,6 +10,20 @@ def main():
     group = select_group(user_token)
     group_id = group["group_id"]
 
+    # get list of users
+    users = group["members"]
+
+    # Sort muted from unmuted users
+    print("Users in this group:")
+    for user in users:
+        is_muted = user["muted"]
+        if(is_muted):
+            muted_string = "  MUTED  "
+        else:
+            muted_string = "NOT MUTED"
+        print(muted_string + " | " + user["nickname"])
+
+
 # lists user's groups, asks for user to select a specific group, returns it.
 def select_group(user_token):
     # Get list of groups
