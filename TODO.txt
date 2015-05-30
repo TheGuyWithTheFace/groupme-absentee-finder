@@ -1,0 +1,19 @@
++ Better formatting
+    + Color "MUTED" or "NOT MUTED" red and green
+    + Sort output?
+        + By alphabetical or muted/not muted, maybe give user option?
+            ~ Option would be in a config file so user doesn't have to reenter it.
+    ~ More graph like output?
+
++ Realtime output
+    + Act as bot
+    + Connect to groupme push servers, notify in chat when someone mutes
+    + If someone types !absent, reply with list of muted members
+
++ Token Improvements
+    + Maybe mask it so it's not displayed in terminal?
+    ~ Cache token to file?
+        - Could be dangerous if several people use same computer
+        + Maybe just look for an optional file with token in it
+    ~ Is it possible for user to just log in directly without looking up dev api?
+
