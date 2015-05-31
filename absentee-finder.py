@@ -8,7 +8,6 @@ def main():
     # gather required background information
     user_token = input("Please enter your API Token: ")
     group = select_group(user_token)
-    group_id = group["group_id"]
 
     # get list of users
     users = group["members"]
